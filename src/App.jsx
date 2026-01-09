@@ -58,6 +58,7 @@ function ChatMessages({ chatMessages }) {
 
 function App() {
   const array = useState([
+    { message: "hello Pervez", sender: "robot", id: crypto.randomUUID(), time: dayjs().format('HH:mm A') },
     { message: "hello chatbot", sender: "user", id: crypto.randomUUID(), time: dayjs().format('HH:mm A') },
     { message: "Hello! How can I help you?", sender: "robot", id: crypto.randomUUID(), time: dayjs().format('HH:mm A') },
     { message: "can you get me today date", sender: "user", id: crypto.randomUUID(), time: dayjs().format('HH:mm A') },
