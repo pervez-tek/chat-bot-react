@@ -1,0 +1,108 @@
+sub{
+        color:#767d7d;
+    }
+
+    .send-button {
+        background-color: rgb(25, 135, 84);
+        color: white;
+        padding: 12px 20px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 10px;
+        font-style: 15px;
+        cursor: pointer;
+    }
+
+    .chat-input {
+        padding: 12px 20px;
+        border-width: 1px;
+        border-radius: 10px;
+        font-style: 15px;
+        flex-grow: 1;
+    }
+
+    .chat-input-container {
+        display: flex;
+        margin-bottom: 60px;
+
+    }
+
+  .app-container {
+    margin-top: 30px;;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+    .chat-input-user {
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .chat-input-robot {
+        display: flex;
+        justify-content: left;
+        align-items: start;
+
+    }
+
+    .chat-message-text {
+        background-color: rgb(238, 238, 238);
+        border-radius: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        max-width: 300px;
+
+    }
+
+    .chat-message-profile {
+        width: 45px;
+    }
+
+    .chat-message-container {
+        margin-top: 20px;
+        flex-grow: 1;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        
+        
+    }
+
+    .chat-message-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* hidden by default */
+.chat-message-container::-webkit-scrollbar {
+    width: 0;
+}
+
+/* show on hover */
+.chat-message-container:hover::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-message-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+/* Firefox */
+.chat-message-container {
+    scrollbar-width: none;
+}
+
+.chat-message-container:hover {
+    scrollbar-width: thin;
+}
